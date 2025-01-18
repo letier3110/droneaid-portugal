@@ -8,6 +8,8 @@ import basicSsl from '@vitejs/plugin-basic-ssl'
 
 import node from '@astrojs/node'
 
+import cloudflare from '@astrojs/cloudflare';
+
 const { NODE_TLS_REJECT_UNAUTHORIZED } = loadEnv(process.env.NODE_ENV || 'development', process.cwd(), '')
 const isDev = process.env.NODE_ENV === 'development'
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = NODE_TLS_REJECT_UNAUTHORIZED
@@ -24,7 +26,5 @@ export default defineConfig({
   },
   integrations: [mdx(), sitemap()],
 
-  adapter: node({
-    mode: 'standalone'
-  })
+  adapter: cloudflare()
 })
