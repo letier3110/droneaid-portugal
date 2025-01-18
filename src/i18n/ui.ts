@@ -1,20 +1,25 @@
 export const languages = {
+  ua: 'Українська',
   en: 'English',
-  fr: 'Français',
+  pt: 'Português',
 };
 
 export const defaultLang = 'en';
 
 export const ui = {
-  en: {
-    'nav.home': 'Home',
-    'nav.blog': 'Blog',
-    'nav.about': 'About',
-    'nav.twitter': 'Twitter',
+  ua: {
+    'nav.about': 'Про нас',
+    'nav.q&a': 'Питання і відповіді',
+    'nav.guides': 'Посібники',
   },
-  fr: {
-    'nav.home': 'Accueil',
-    'nav.blog': 'Blog',
-    'nav.about': 'À propos',
+  en: {
+    'nav.about': 'About',
+    'nav.q&a': 'Q&A',
+    'nav.guides': 'Guides',
+  },
+  pt: {
+    'nav.about': 'Sobre',
+    'nav.q&a': 'P&R',
+    'nav.guides': 'Guias',
   },
 } as const;

@@ -66,3 +66,11 @@ Check out [our documentation](https://docs.astro.build) or jump into our [Discor
 ## Credit
 
 This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+
+system colors:
+- a: rgb(66 56 235)
+- a light-1: #b3d4fc
+- a light-2: rgb(220 235 253)
+- b: #FFD00E
+- b light: rgb(255 247 201)
+- c, text: rgb(66 56 235)
