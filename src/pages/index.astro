@@ -1,51 +1,94 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<meta http-equiv="refresh" content="0;url=/ua/" />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+<html lang='en'>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h3>
+        🇵🇹🇺🇦Welcome to the <code>DroneAid Collective</code> in Portugal!
+      </h3>
+      <p>
+        We are a social project of DroneAid Collective in Porto. We raise funds for components that we use to teach how to
+        to assemble full-fledged drones and solder them. The created drones are handed over to military units for surveillance,
+        reconnaissance and intelligence missions.
+      </p>
+      <h4>Our goal</h4>
+      <p>
+        <ul>
+          <li>
+            Through physical involvement in the construction of the drone and involvement in the community, to involve locals and foreigners in helping Ukraine
+          </li>
+          <li>Include veterans in social events</li>
+          <li>
+            To show civilians that drone assembly is actually an accessible activity. Because of this, add more people trained in distributed drone assembly (project <a href="https://www.socialdrone.com.ua/en">SocialDrone</a>)
+          </li>
+          <li>
+            To build a local community of technical specialists who are able to come up with new solutions or deploy/scale drone production.
+          </li>
+        </ul>
 			</p>
+        <h4>
+					Event format, or what we do:
+					</h4>
+				<p>
+        <ul>
+          <li>purchase of components for drones</li>
+          <li>organizing an event where we teach how to solder and assemble drones from components</li>
+          <li>testing the assembled drones, including basic flight missions</li>
+          <li>sending assembled and tested drones to military units in Ukraine</li>
+        </ul>
+      </p>
+      <h4 id='qna'>Questions and answers</h4>
+      <h5>How can I get involved?</h5>
+      <p>
+        As of now, we have a telegram chat to coordinate the Ukrainian community. For foreigners (English and Portuguese speakers), we are planning a whatsapp community chat. The best way to get involved is to donate money for a kit or a part of it, as well as to come to the event and try to assemble your own drone from the components that will be provided.
+      </p>
+      <h5>Do I need to have any skills or tools?</h5>
+      <p>
+        All the necessary tools will be provided, no skills are required to participate - the organizers and mentors will teach everything during the event. However, if you know how to solder or are good at electronics, we will be happy to have you participate in the assembly of the drones and join the organizers' team as a mentor.
+      </p>
+      <h5>What does a drone assembly event consist of?</h5>
+      <p>
+        First, we give a mini-lecture on soldering techniques and allow you to solder test boards and cables. After that, the actual drone assembly phase begins, which consists mostly of measuring the size of the cables, cutting off the excess and soldering them into the flight controller board. All the necessary tools will be available provided by the organizers, but you are welcome to bring your own tools or share them. The main tools that will be needed during the assembly:
+				<ul>
+					<li>65 Watt soldering iron</li>
+					<li>Tweezers to hold cables</li>
+					<li>Flux, solder wire</li>
+					<li>Phillips and hex screwdrivers for M2-M5 bolts</li>
+				</ul>
+      </p>
+      <h5>What happens after the drone is assembled?</h5>
+      <p>
+        The first step is to check the soldering condition of the batteries, motors, and other elements of the drone. After that, the drone is reprogrammed with the latest software versions. The next weekend after the drones are assembled, if the weather conditions are suitable, the assembled drones are flight tested. If no problems were noticed during all these tests, the drone is ready to be sent to a military unit in Ukraine.
+      </p>
+      <h5>When will I be able to see the photo/video report with the drone I assembled/donated?</h5>
+      <p>
+        After all the drones are assembled, checked for proper soldering, and tested in flight, they are shipped to Ukraine. The average logistics time takes 2 weeks to Ukraine and up to two more weeks within Ukraine. Therefore, expect a report from the relevant military unit after this period, which we will post on social media and in the relevant chats.
+      </p>
+      <h5>
+        What if I donate 230 euros but can't come? or “I want to donate 230 euros, but I don't know when the workshop is”
+      </h5>
 			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
+				<ol>
+					<li>Your right to assemble a drone remains with you, even if you can't come, it will be waiting for you next time</li>
+					<li>Unfortunately, it is not yet possible to determine the date because it depends on the pace of collection. but it is estimated to be Saturday or Sunday. Or from the last workshop in two weekends on Saturday or Sunday</li>
+				</ol>
 			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
+			<h4 id="guides">Assembly guides:</h4>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/3NaTwaRA78Q?si=aXy-5wt__LHEKUGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
+				<a href="https://social-drone-ua.notion.site/FPV-Pilotix-826ea509712246fa8f7b6008de466a6c">Social drone - Assembling a FPV (pilotix)</a>
 			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+    </main>
+    <Footer />
+  </body>
 </html>
